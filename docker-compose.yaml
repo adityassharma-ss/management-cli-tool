@@ -1,0 +1,8 @@
+version: '3'
+services:
+  cli:
+    build: .
+    container_name: cli-container
+    volumes:
+      - ./data:/app/data  # Mount a volume for data storage (optional)
+    command: ["./commands.js"]  # Optional: Specify the default command here
